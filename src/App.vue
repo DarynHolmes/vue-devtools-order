@@ -1,17 +1,18 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <button @click="insertError">Add Error</button>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import store from './store'
 
 export default {
   name: 'app',
-  components: {
-    HelloWorld
+  methods: {
+    insertError () {
+      store.dispatch('addError', new Error('An error'))
+    }
   }
 }
 </script>
