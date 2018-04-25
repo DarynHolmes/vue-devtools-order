@@ -11,6 +11,6 @@ In the console, the logger shows us that `addError` was called before `removeErr
 The Vue DevTools shows this order in reverse. This makes it difficult to "time travel" with the dev tools.
 
 
-It appears that the Dev Tools are not using enough precesion when ordering by time.
+It appears that the Dev Tools are not using enough precision when ordering by time.
 
 
